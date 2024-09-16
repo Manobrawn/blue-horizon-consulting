@@ -1,0 +1,14 @@
+:root {
+  --background-color: #1f2937;
+  --quote-backgroundcolor: #e5e7eb;
+  --main-text: #f9faf8;
+  --secondary-text: #e5e7eb;
+  --headerlogo-text: #f9faf8;
+  --button-color: #3882f6;
+  --informationheader-text: #1f2937;
+  --quote-text: #1f2937;
+  --font-small: 18px;
+  --font-medium: 24px;
+  --font-large: 36px;
+  --font-xl: 48px;
+}
