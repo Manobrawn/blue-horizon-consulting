@@ -1,14 +1,153 @@
+@font-face {
+  font-family: "roboto-bold";
+  src: url(./Roboto/Roboto-Bold.ttf);
+}
+@font-face {
+  font-family: "roboto-normal";
+  src: url(./Roboto/Roboto-Regular.ttf);
+}
+@font-face {
+  font-family: "roboto-italic";
+  src: url(./Roboto/Roboto-Italic.ttf);
+}
+
+/* @media only screen and (max-width: 760px) {
+  .about-main-container {
+    display: block;
+  }
+} */
+
 :root {
-  --background-color: #1f2937;
-  --quote-backgroundcolor: #e5e7eb;
-  --main-text: #f9faf8;
-  --secondary-text: #e5e7eb;
-  --headerlogo-text: #f9faf8;
-  --button-color: #3882f6;
-  --informationheader-text: #1f2937;
-  --quote-text: #1f2937;
+  --dark-color: #1f2937;
+  --darker-white: #e5e7eb;
+  --white-color: #f9faf8;
+  --blue-color: #3882f6;
   --font-small: 18px;
   --font-medium: 24px;
   --font-large: 36px;
   --font-xl: 48px;
+}
+/*----------- STANDARDS => Don't Change just Overwrite with specifics -----------*/
+* {
+  margin: 0;
+}
+
+h1 {
+  padding: 5rem 0 0 6rem; /* This padding preventes the h1 to hide under the <nav> bar! */ 
+  font-family: "roboto-bold";
+  font-size: var(--font-xl);
+}
+
+h2 {
+  font-family: "roboto-bold";
+  font-size: var(--font-large);
+}
+
+p {
+  font-family: "roboto-normal";
+  font-size: var(--font-small);
+  line-height: 2rem;
+}
+
+figcaption {
+  font-family: "roboto-italic";
+  font-size: 16px;
+}
+
+footer {
+  text-align: center;
+  background-color: var(--dark-color);
+}
+
+button {
+  background-color: var(--blue-color);
+  color: var(--white-color);
+  font-family: "roboto-normal";
+  border: none;
+  border-radius: 10%;
+  width: 100px;
+  height: 40px;
+}
+/*-------------------------------- NAV-BAR --------------------------------------------*/
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  background-color: var(--blue-color);
+}
+
+.nav-left-container {
+  margin-left: 5rem;
+}
+
+.nav-right-container {
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem 5.5rem 0 0;
+
+}
+
+.nav-right-container > a {
+  font-family: "roboto-normal";
+  text-decoration: none;
+  font-size: var(--font-medium);
+  color: var(--white-color);
+}
+
+.logo {
+  width: 70px;
+  height: 70px;
+}
+/*-------------- SPECIFICS => about.html ----------------------------------------------*/
+.main-header-about-us { 
+  padding: 0;
+  padding-bottom: 2rem;
+  color: var(--white-color);
+} 
+
+.subheader-about-us {
+  color: var(--darker-white);
+}
+
+.about-top-container {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 10rem;
+  padding-bottom: 2rem;
+  background-color: var(--dark-color);
+}
+
+.about-top-left-container {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about-top-right-container {
+  width: 35%;;
+}
+
+.team-picture {
+  width: 500px;
+
+}
+
+.team-pic-caption {
+  padding-top: 1rem;
+  color: var(--white-color);
+}
+
+.about-join-us-button {
+  margin-bottom: 3rem;
+}
+
+.our-vision-header {
+  color: var(--dark-color);
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  text-align: center;
 }
