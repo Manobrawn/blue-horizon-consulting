@@ -33,37 +33,29 @@
 }
 
 h1 {
-  padding: 5rem 0 0 6rem;
+  padding: 5rem 0 0 6rem; /* This padding preventes the h1 to hide under the <nav> bar! */ 
   font-family: "roboto-bold";
   font-size: var(--font-xl);
-  color: var(--white-color);
 }
 
 h2 {
   font-family: "roboto-bold";
   font-size: var(--font-large);
-  color: var(--dark-color);
-  padding-top: 5rem;
 }
 
 p {
   font-family: "roboto-normal";
   font-size: var(--font-small);
   line-height: 2rem;
-  color: var(--darker-white);
 }
 
 figcaption {
-  padding-top: 1rem;
   font-family: "roboto-italic";
   font-size: 16px;
-  color: var(--white-color);
 }
 
 footer {
-  margin-top: 5rem;
   text-align: center;
-  background-color: var(--);
   background-color: var(--dark-color);
 }
 
@@ -109,12 +101,17 @@ nav {
   height: 70px;
 }
 /*-------------- SPECIFICS => about.html ----------------------------------------------*/
-.header-main-about-us { 
+.main-header-about-us { 
   padding: 0;
   padding-bottom: 2rem;
+  color: var(--white-color);
 } 
 
-.about-top-main-container {
+.subheader-about-us {
+  color: var(--darker-white);
+}
+
+.about-top-container {
   display: flex;
   justify-content: space-around;
   padding-top: 10rem;
@@ -122,7 +119,7 @@ nav {
   background-color: var(--dark-color);
 }
 
-.about-top-left-main-container {
+.about-top-left-container {
   width: 35%;
   display: flex;
   flex-direction: column;
@@ -130,7 +127,7 @@ nav {
   justify-content: space-between;
 }
 
-.about-top-right-main-container {
+.about-top-right-container {
   width: 35%;;
 }
 
@@ -139,7 +136,18 @@ nav {
 
 }
 
+.team-pic-caption {
+  padding-top: 1rem;
+  color: var(--white-color);
+}
+
 .about-join-us-button {
   margin-bottom: 3rem;
 }
 
+.our-vision-header {
+  color: var(--dark-color);
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  text-align: center;
+}
