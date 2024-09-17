@@ -78,7 +78,23 @@ nav {
 }
 
 .nav-left-container {
+  display: flex;
+  align-items: center;
   margin-left: 5rem;
+}
+
+.logo {
+  width: 70px;
+  height: 70px;
+  margin-right: 1rem;
+}
+
+.nav-logo-name h2 {
+  text-decoration: none; /* Not sure how to remove the underline as the logo name is a link now */
+  font-family: "roboto-normal";
+  font-size: var(--font-medium);
+  color: var(--white-color);
+  margin: 0;
 }
 
 .nav-right-container {
@@ -86,7 +102,6 @@ nav {
   display: flex;
   justify-content: space-between;
   padding: 1.5rem 5.5rem 0 0;
-
 }
 
 .nav-right-container > a {
@@ -96,10 +111,6 @@ nav {
   color: var(--white-color);
 }
 
-.logo {
-  width: 70px;
-  height: 70px;
-}
 /*-------------- SPECIFICS => about.html ----------------------------------------------*/
 .main-header-about-us { 
   padding: 0;
@@ -150,4 +161,156 @@ nav {
   padding-top: 2rem;
   padding-bottom: 2rem;
   text-align: center;
+}
+
+
+/*-------------- SPECIFICS => index.html ----------------------------------------------*/
+
+.main-header-homepage { 
+  padding: 0;
+  padding-bottom: 2rem;
+  color: var(--white-color);
+} 
+
+.subheader-homepage {
+  padding-top: 40px;
+  color: var(--darker-white);
+}
+
+.info-section {
+  padding-top: 30px;
+  text-align: center;
+}
+
+.info-container {
+  padding-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.info-item {
+  text-align: center;
+  flex: 1;
+}
+
+.info-box {
+  width: 150px;
+  height: 150px;
+  border: 2px solid #0066ff;
+  border-radius: 10px;
+  margin: 0 auto 5px;
+}
+
+.info-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.quote-box {
+  background-color: var(--darker-white);
+  max-width: 1300px;
+  padding: 80px;
+  margin: 40px auto; 
+  border-radius: 10px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.homepage-quote p {
+  text-align: center;
+  color: var(--dark-color);
+  font-size: var(--font-large);
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.quote-author {
+  text-align: end;
+  font-weight: bold;
+  color: var(--dark-color);
+}
+
+.call-to-action {
+  background-color: var(--blue-color);
+  margin: 100px auto;
+  border-radius: 10px;
+  max-width: 900px;
+}
+
+.cta-box {
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+}
+
+.cta-text-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.call-to-action-text {
+  color: var(--white-color);
+  flex: 1;
+  margin-right: 20px;
+}
+
+.homepage-join-us-button {
+  background-color: var(--blue-color);
+  color: var(--white-color);
+  border: 2px solid var(--white-color);
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.homepage-join-us-button:hover {
+  background-color: var(--white-color);
+  color: var(--blue-color);
+}
+
+
+/*-------------- SPECIFICS => services.html ----------------------------------------------*/
+
+.subheader-services {
+  color: var(--darker-white);
+}
+
+.about-top-container {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 10rem;
+  padding-bottom: 2rem;
+  background-color: var(--dark-color);
+}
+
+.reverse-layout {
+  flex-direction: row-reverse;
+}
+
+.about-top-left-container, .about-top-right-container {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.team-picture {
+  width: 500px;
+}
+
+
+
+/* -------------------------- FOOTER -------------------------- */
+
+.footer {
+  padding: 20px;
+  color: var(--white-color)
 }
