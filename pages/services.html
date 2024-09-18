@@ -11,63 +11,72 @@
   <header>
     <nav>
       <div class="nav-left-container">
-        <a href="../index.html" aria-label="go to Homepage">
+        <a class="anchor" href="../index.html" aria-label="go to Homepage">
           <img class="logo" src="../pictures/blue-money-logo.png" alt="Homepage Logo">
         </a>
         <div class="nav-logo-name">
-          <a href="/index.html" aria-label="go to Homepage">
-            <h2>Blue Horizon Consulting</h2>
+          <a class="anchor" href="/index.html" aria-label="go to Homepage">
+            <h2 class="logo-header">Blue Horizon Consulting</h2>
           </a>
         </div>
       </div>
       <div class="nav-right-container">
-        <a href="/pages/services.html">Our Services</a>
-        <a href="/pages/about.html">About Us</a>
-        <a href="/pages/signup.html">Join the Team</a>
+        <a class="anchor" href="/pages/services.html">Our Services</a>
+        <a class="anchor" href="/pages/about.html">About Us</a>
+        <a class="anchor" href="/pages/signup.html">Join the Team</a>
       </div> 
     </nav>
   </header>  
-  <main>
-    <div class="about-top-container">
-      <div class="about-top-left-container">
-        <span>
-          <h1 class="main-header-homepage">Invenstment Strategies</h1> 
-          <hr>
-        </span>
-        <p class="subheader-homepage">
-          Maximize your returns with tailored investment strategies designed to meet your unique financial goals. Our experts analyze market trends and provide personalized guidance to help grow your portfolio confidently.
-        </p>
-        <br>
-        <button class="homepage-join-us-button" onclick="window.location.href='/pages/signup.html';">Join Us</button> 
-      </div>
-      <div class="about-top-right-container">
-        <figure>
-          <img class="team-picture" src="/pictures/investment-strategies.jpg" alt="picture of a man in a suit">
-          <figcaption class="team-pic-caption">Our Investment Specialists are highly qualified in the Financial Market.</figcaption>
-        </figure>
+  <main> <!--simplified top containers classes names-->
+    <div class="wrap-container top-wrap-container">
+      <div class="top-container">
+        <div class="top-left-container">
+          <span>
+            <h1 class="main-header-homepage">Invenstment Strategies</h1> 
+            <hr>
+          </span>
+          <p class="subheader-homepage">
+            Maximize your returns with tailored investment strategies designed to meet your unique financial goals. 
+            Our experts analyze market trends and provide personalized guidance to help grow your portfolio confidently.
+          </p>
+          <br>
+          <button onclick="window.location.href='/pages/signup.html';">Join Us</button> 
+        </div>
+        <div class="top-right-container">
+          <figure>
+            <img class="standard-img" src="/pictures/investment-strategies.jpg" alt="picture of a man in a suit">
+            <figcaption class="team-pic-caption">
+              Our Investment Specialists are highly qualified in the Financial Market.
+            </figcaption>
+          </figure>
+        </div>
       </div>
     </div>
-    <div class="about-top-container reverse-layout">
-      <div class="about-top-left-container">
-        <span>
-          <h1 class="main-header-homepage">Retirement Planning</h1> 
-          <hr>
-        </span>
-        <p class="subheader-homepage">
-          Secure your future with comprehensive retirement planning. We help you develop a clear, actionable plan to ensure financial independence and peace of mind throughout your retirement years.
-        </p>
-        <br>
-        <button class="homepage-join-us-button" onclick="window.location.href='/pages/signup.html';">Join Us</button> 
-      </div>
-      <div class="about-top-right-container">
-        <figure>
-          <img class="team-picture" src="/pictures/retirement-planning.jpg" alt="Retirement planning image">
-          <figcaption class="team-pic-caption">Our specialists are here to guide you in retirement planning.</figcaption>
-        </figure>
+    <div class="wrap-container">
+      <div class="top-container reverse-layout">
+        <div class="top-left-container">
+          <span>
+            <h1 class="main-header-homepage">Retirement Planning</h1> 
+            <hr>
+          </span>
+          <p class="subheader-homepage">
+            Secure your future with comprehensive retirement planning. We help you develop a clear, 
+            actionable plan to ensure financial independence and peace of mind throughout your retirement years.
+          </p>
+          <br>
+          <button onclick="window.location.href='/pages/signup.html';">Join Us</button> <!-- A tiny bit of JS sorry :/ -->
+        </div>
+        <div class="top-right-container">
+          <figure>
+            <img class="standard-img" src="/pictures/retirement-planning.jpg" alt="Retirement planning image">
+            <figcaption class="team-pic-caption">
+              Our specialists are here to guide you in retirement planning.
+            </figcaption>
+          </figure>
+        </div>
       </div>
     </div>
   </main>
-
   <footer>
     <p>&copy; 2024, Marcelo Ruediger & Thomas Andersen. All rights reserved.</p>
   </footer>

@@ -11,25 +11,25 @@
   <header>
     <nav>
       <div class="nav-left-container">
-        <a href="../index.html" aria-label="go to Homepage">
+        <a class="anchor" href="../index.html" aria-label="go to Homepage">
           <img class="logo" src="../pictures/blue-money-logo.png" alt="Homepage Logo">
         </a>
         <div class="nav-logo-name">
-          <a href="/index.html" aria-label="go to Homepage">
-            <h2>Blue Horizon Consulting</h2>
+          <a class="anchor" href="./index.html" aria-label="go to Homepage">
+            <h2 class="logo-header">Blue Horizon Consulting</h2>
           </a>
         </div>
       </div>
       <div class="nav-right-container">
-        <a href="/pages/services.html">Our Services</a>
-        <a href="/pages/about.html">About Us</a>
-        <a href="/pages/signup.html">Join the Team</a>
+        <a class="anchor" href="./pages/services.html">Our Services</a>
+        <a class="anchor" href="./pages/about.html">About Us</a>
+        <a class="anchor" href="./pages/signup.html">Join the Team</a>
       </div> 
     </nav>
   </header>  
-  <main>
-    <div class="about-top-container">
-      <div class="about-top-left-container">
+  <main> <!--simplified top containers classes names-->
+    <div class="top-container">
+      <div class="top-left-container">
         <span>
           <h1 class="main-header-homepage">Expert Guidance <br> Tailored Solutions</h1> 
           <hr>
@@ -38,62 +38,54 @@
           At Blue Horizon Consulting, we provide personalized financial strategies to help you grow your wealth, manage your business, and plan for the future. With expert guidance, we make navigating your financial journey simple and clear.
         </p>
         <br>
-        <button class="homepage-join-us-button" onclick="window.location.href='/pages/signup.html';">Join Us</button> 
+        <button onclick="window.location.href='/pages/signup.html';">Join Us</button> 
       </div>
-      <div class="about-top-right-container">
+      <div class="top-right-container">
         <figure>
-          <img class="team-picture" src="./pictures/homepage-image.jpg" alt="picture of a man in a suit">
+          <img class="standard-img" src="./pictures/homepage-image.jpg" alt="picture of a man in a suit">
           <figcaption class="team-pic-caption">Our Investment Specialists are highly qualified in the Financial Market.</figcaption>
         </figure>
       </div>
     </div>
     <section class="info-section">
       <h2>Our Sevices</h2>
-      <div class="info-container">
+      <div class="info-container"> <!-- REMOVED extra <div> and placed class="info-box" direct on <img> -->
         <div class="info-item">
-          <div class="info-box">
-            <img src="/pictures/investment-strategies.jpg">
-          </div>
+          <img class="info-box" src="./pictures/investment-strategies.jpg">
           <p>Investment Strategies</p>
         </div>
         <div class="info-item">
-          <div class="info-box">
-            <img src="/pictures/retirement-planning.jpg">
-          </div>
+          <img class="info-box" src="./pictures/retirement-planning.jpg">
           <p>Retirement Planning</p>
         </div>
         <div class="info-item">
-          <div class="info-box">
-            <img src="/pictures/tax-optimization.jpg">
-          </div>
+          <img class="info-box" src="./pictures/tax-optimization.jpg">
           <p>Tax Optimization</p>
         </div>
         <div class="info-item">
-          <div class="info-box">
-            <img src="/pictures/financial-consulting.jpg">
-          </div>
+          <img class="info-box" src="./pictures/financial-consulting.jpg">
           <p>Corporate Financial Consulting</p>
         </div>
       </div>
     </section>
-    <div class="quote-box">
-      <p class="homepage-quote">
-        <i>"Thanks to Blue Horizon Consulting, I’ve transformed my financial strategy and gained the confidence to grow my business. Their expertise and personalized approach truly set them apart."</i>
-      </p>
-      <p class="quote-author">- Branko</p>
+    <div class="quote-box"> <!--replaced <div> and <p> for <blockquote> and <em> Synthetic Value -->
+      <blockquote>
+        <em>"Thanks to Blue Horizon Consulting, I’ve transformed my financial strategy and gained 
+          the confidence to grow my business. Their expertise and personalized approach truly set them apart."
+        </em>
+      </blockquote>
+      <p class="quote-author">- Branko, CEO of Blue Horizon Consulting</p>
     </div>
     <div class="call-to-action">
       <div class="cta-box">
         <p class="call-to-action-text">
           Take control of your financial future today. Join us and start your journey toward success!
         </p>
-        <button class="homepage-join-us-button" onclick="window.location.href='/pages/signup.html';">Join Us!</button> 
+        <button onclick="window.location.href='/pages/signup.html';">Join Us!</button>
       </div>
     </div>
-    
   </main>
-
-  <footer class="footer">
+  <footer>
     <p>&copy; 2024, Marcelo Ruediger & Thomas Andersen. All rights reserved.</p>
   </footer>
 </body>
