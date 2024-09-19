@@ -119,7 +119,6 @@ nav {
 }
 
 .nav-logo-name h2 {
-  text-decoration: none; /* Not sure how to remove the underline as the logo name is a link now */
   font-family: "roboto-normal";
   font-size: var(--font-medium);
   color: var(--white-color);
@@ -167,7 +166,7 @@ nav {
 }
 
 .top-right-container {
-  width: 35%;;
+  width: 35%;
 }
 
 .our-vision-header {
@@ -218,9 +217,9 @@ section > hr {
 }
 /*-------------- SPECIFICS => index.html ----------------------------------------------*/
 .main-header-homepage { 
-  padding: 0;
   padding-bottom: 2rem;
   color: var(--white-color);
+
 } 
 
 .subheader-homepage {
@@ -239,7 +238,6 @@ section > hr {
   display: flex;
   justify-content: space-between;
   gap: 1rem;
-  max-width: 1200px; /*----- Not PX scalability! -----*/
   margin: 0 auto;
 }
 
@@ -249,8 +247,8 @@ section > hr {
 }
 
 .info-box {
-  width: 150px;
-  height: 150px;
+  width: 40%;
+  height: 90%;
   border: 2px solid #0066ff;
   border-radius: 10px;
   margin: 0 auto 5px;
@@ -266,7 +264,7 @@ section > hr {
 .quote-box {  /*Avoid to use pixel for containers use scalable rules like %*/
   background-color: var(--darker-white);
   max-width: 80%;
-  padding: 80px;
+  padding: 4%;
   border-radius: 10px; 
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin: 6rem auto;
