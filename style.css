@@ -406,7 +406,7 @@ section > hr {
   .top-container {
     flex-direction: column;
     padding: 20px;
-    padding-top: 30%;
+    padding-top: 20%;
   }
 
   .top-left-container, .top-right-container {
@@ -501,7 +501,18 @@ section > hr {
   .nav-left-container {
     margin-left: 0;
   }
-  
+
+  .section-container {
+    flex-direction: column;
+  }
+
 
 }
 
+@media only screen and (max-width: 430px) {
+
+  .top-container {
+    padding-top: 40%;
+  }
+
+}
