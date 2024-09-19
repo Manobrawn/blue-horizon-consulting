@@ -88,6 +88,7 @@ blockquote {
 
 .standard-img {
   width: 500px;
+  border: 2px solid var(--dark-color);
 }
 
 .smaller-img {
@@ -153,6 +154,8 @@ nav {
   display: flex;
   justify-content: space-around;
   background-color: var(--dark-color);
+  padding-top: 6rem;
+  padding-bottom: 4rem;
 }
 
 .top-left-container {
@@ -236,7 +239,7 @@ section > hr {
   display: flex;
   justify-content: space-between;
   gap: 1rem;
-  max-width: 1200px; /*----- Need to be changed -----*/
+  max-width: 1200px; /*----- Not PX scalability! -----*/
   margin: 0 auto;
 }
 
@@ -302,36 +305,60 @@ section > hr {
   margin-right: 20px;
 }
 /*-------------- SPECIFICS => services.html ----------------------------------------------*/
-.wrap-container {
-  margin: 4rem;
-  overflow: hidden;
-}
-
-.top-wrap-container {
-  margin-top: 0;
-}
-
 .subheader-services {
   color: var(--darker-white);
 }
 
-.top-container {
+.services-top-container.first-service {
+  padding-top: 150px;
+}
+
+.services-top-container {
   display: flex;
   justify-content: space-around;
-  padding-top: 10rem;
-  padding-bottom: 2rem;
+  padding-top: 50px;
+  padding-bottom: 50px;
   background-color: var(--dark-color);
 }
 
-.reverse-layout {
-  flex-direction: row-reverse;
-}
-
-.top-left-container, .top-right-container {
+.services-top-left-container, .services-top-right-container {
   width: 35%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
+}
+
+.reverse-layout {
+  flex-direction: row-reverse;
+  background: var(--white-color);
+}
+
+.reverse-layout h1,
+.reverse-layout p,
+.reverse-layout figcaption {
+  color: var(--dark-color);
+}
+
+.reverse-layout .reversed-button:hover {
+  background-color: var(--dark-color);
+  color: var(--white-color);
+}
+/*------------------ signup.html ------------------------------------------------------*/
+.form-header {
+  text-align: center;
+  padding: 2rem 0;
+  background-color: var(--dark-color);
+  color: var(--white-color);
+}
+
+.join-us-form {
+  padding: 2rem 0;
+  margin: auto auto;
+  text-align: center;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
   justify-content: space-between;
 }
 
