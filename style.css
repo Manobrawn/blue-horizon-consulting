@@ -27,7 +27,7 @@
 }
 
 h1 {
-  padding: 5rem 0 0 6rem; /* This padding preventes the h1 to hide under the <nav> bar! */ 
+  padding: 5rem 0 0 6rem; /* This padding preventes the h1 to hide under the <nav> bar! */
   font-family: "roboto-bold";
   font-size: var(--font-xl);
 }
@@ -402,13 +402,6 @@ section > hr {
 }
 
 @media only screen and (max-width: 950px) {
-  .nav-logo-name {
-    display: none;
-  }
-
-  .nav-right-container a {
-    font-size: 15px;
-  }
 
   .top-container {
     flex-direction: column;
@@ -490,5 +483,25 @@ section > hr {
   .nav .logo {
     justify-items: left;
   }
+
+  .nav-logo-name {
+    display: none;
+  }
+
+  .nav-right-container a {
+    font-size: var(--font-small);
+    padding: 1rem;
+    padding-bottom: 2rem;
+  }
+
+  /* .nav-right-container {
+    padding: 1.5rem 1 1 1.5rem;
+  } */
+
+  .nav-left-container {
+    margin-left: 0;
+  }
+  
+
 }
 
