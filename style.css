@@ -35,6 +35,7 @@ h1 {
 h2 {
   font-family: "roboto-bold";
   font-size: var(--font-large);
+  line-height: 2rem;
 }
 
 h3 {
@@ -50,7 +51,7 @@ p {
 
 figcaption {
   font-family: "roboto-normal";
-  font-size: 16px;
+  font-size: 14px;
   color: var(--white-color);
 }
 
@@ -58,7 +59,7 @@ footer {
   text-align: center;
   background-color: var(--dark-color);
   padding: 20px;
-  color: var(--white-color)
+  color: var(--white-color);
 }
  
 button { /* stadardlized buttons, anchors and blockquotes */
@@ -223,8 +224,8 @@ section > hr {
 } 
 
 .subheader-homepage {
-  padding-top: 40px;
   color: var(--darker-white);
+  padding-top: 3rem;
 }
 
 .info-section {
@@ -455,32 +456,13 @@ fieldset {
   display: block;
 }
 
-@media only screen and (max-width: 950px) {
-  .form-main-container {
-    flex-direction: column;
-  }
-  
-  .owned-investments {
-    flex-direction: column;
-  }
-
-  .owned-investments-span {
-    display: inline-block;
-  }
-} 
-
-@media only screen and (max-width: 1500px) {
- .form-right-container {
-  margin-left: 1rem;
- }
-} 
 @media only screen and (max-width: 1500px) {
   .nav-logo-name h2 {
-    font-size: 20px;
+    font-size: var(--font-small);
   }
 
-  .nav-right-container a{
-    font-size: 20px;
+  .nav-right-container a {
+    font-size: var(--font-small);
   }
 
   .top-container {
@@ -489,7 +471,8 @@ fieldset {
   }
 
   .top-left-container, .top-right-container {
-    width: 50%;
+    width: 40%;
+    padding-bottom: 2rem;
   }
 
   .info-section {
@@ -501,17 +484,25 @@ fieldset {
   }
 
   p {
-    font-size: 15px;
+    font-size: var(--font-small);
   }
 
   .info-box {
     width: 100%;
   }
 
+  .form-right-container {
+    margin-left: 1rem;
+  }
+
+  h2 {
+    font-size: var(--font-medium);
+    line-height: 5rem;
+  }
+
 }
 
 @media only screen and (max-width: 950px) {
-
   .top-container {
     flex-direction: column;
     padding: 20px;
@@ -527,7 +518,7 @@ fieldset {
     align-items: center;
     width: 100%;
     box-sizing: border-box;
-    padding: 0 5% 3;
+    padding: 1rem;
   }
 
   .services-top-left-container,
@@ -547,7 +538,7 @@ fieldset {
 
   .info-container {
     flex-direction: column;
-    align-items: center;
+    padding-top: 1rem;
   }
 
   .info-item {
@@ -565,6 +556,10 @@ fieldset {
     margin-top: 20px;
   }
 
+  .info-box {
+    width: 70%;
+  }
+
   h1 {
     font-size: 30px;
   }
@@ -573,8 +568,12 @@ fieldset {
     font-size: 17px;
   }
 
-  h2 {
-    font-size: 25px;
+  .our-services-homepage {
+    line-height: 4rem;
+  }
+
+  .our-services-homepage-hr {
+    width: 50%;
   }
 
   .quote-box {
@@ -599,27 +598,50 @@ fieldset {
 
   .nav-right-container a {
     font-size: var(--font-small);
-    padding: 1rem;
+    padding: 0.8rem;
     padding-bottom: 2rem;
   }
 
-  /* .nav-right-container {
-    padding: 1.5rem 1 1 1.5rem;
-  } */
-
   .nav-left-container {
-    margin-left: 0;
+    margin-left: 0.8rem;
   }
 
   .section-container {
     flex-direction: column;
   }
 
+  .form-main-container {
+    flex-direction: column;
+  }
+  
+  .owned-investments {
+    flex-direction: column;
+  }
 
+  .owned-investments-span {
+    display: inline-block;
+  }
+
+  .join-us-main-header {
+    padding-top: 8rem;
+    padding-left: 1rem;
+  }
+
+  .form-main-container legend {
+    font-size: var(--font-small);
+  }
+
+  footer p {
+    font-size: 14px;
+  }
+
+  figcaption {
+    font-size: 12px;
+  }
 }
 
-@media only screen and (max-width: 430px) {
 
+@media only screen and (max-width: 430px) {
   .top-container {
     padding-top: 40%;
   }
