@@ -640,17 +640,23 @@ fieldset {
     font-size: 12px;
   }
 
-.our-vision-header {
+  .our-vision-header {
     padding: none;
     line-height: normal;
   }
 
+  .form-header {
+    padding: 1rem;
 }
 
+  .preferred-contact {
+    display: flex;
+    flex-direction: column;
+}
+}
 
 @media only screen and (max-width: 430px) {
   .top-container {
     padding-top: 40%;
   }
-
 }
