@@ -7,31 +7,143 @@
   <link rel="icon" href="../pictures/blue-money-logo.png" type="image/x-icon">
   <title>Join Us</title>
 </head>
-<body>
+<body class="sign-up-body">
   <header>
     <nav>
       <div class="nav-left-container">
-        <a href="../index.html" aria-label="go to Homepage">
+        <a class="anchor" href="../index.html" aria-label="go to Homepage">
           <img class="logo" src="../pictures/blue-money-logo.png" alt="Homepage Logo">
         </a>
         <div class="nav-logo-name">
-          <a href="/index.html" aria-label="go to Homepage">
-            <h2>Blue Horizon Consulting</h2>
+          <a class="anchor" href="/index.html" aria-label="go to Homepage">
+            <h2 class="logo-header">Blue Horizon Consulting</h2>
           </a>
         </div>
       </div>
       <div class="nav-right-container">
-        <a href="/pages/services.html">Our Services</a>
-        <a href="/pages/about.html">About Us</a>
-        <a href="/pages/signup.html">Join the Team</a>
+        <a class="anchor" href="./services.html">Our Services</a>
+        <a class="anchor" href="./about.html">About Us</a>
+        <a class="anchor" href="./signup.html">Join Us</a>
       </div> 
     </nav>
   </header>  
   <main>
-    <h1>Join Us</h1>
+    <h1 class="join-us-main-header">Join Us</h1>
+    <h2 class="form-header">Please fill out the form bellow and our Specialists will contact you ASAP</h2>
+    <form class="join-us-form" action="submit" method="post"> 
+      <div class="form-main-container">
+        <fieldset class="basic-info">
+          <legend>Basic Information</legend>
+          <label>Full Name:
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+          </label>
+          <br><br>
+          <label>Birth Date:
+            <input type="date" id="birthdate" name="birthdate" required>
+          </label>
+          <br><br>
+          <label>Country:
+            <select id="country" name="country" required>
+              <option value="" disabled selected>Select your country</option>
+              <option value="serbia">Serbia</option>
+              <option value="usa">United States</option>
+              <option value="germany">Germany</option>
+              <option value="brazil">Brazil</option>
+              <option value="canada">Canada</option>
+              <option value="uk">United Kingdom</option>
+              <option value="australia">Australia</option>
+            </select>
+          </label>
+          <br><br>
+          <label>Preferred Language:
+            <select id="preferred-language" name="preferred-language" required>
+              <option value="" disabled selected>Select your preferred Language</option>
+              <option value="english">English</option>
+              <option value="spanish">Spanish</option>
+              <option value="portuguese">Portuguese</option>
+              <option value="german">German</option>
+            </select><br>
+          </label>
+        </fieldset>
+        <br><br>
+        <div class="form-right-container">
+          <fieldset class="preferred-contact">
+            <legend>How do you prefer to be contacted?</legend>
+              <label for="contact-phone">Phone </label>
+              <input type="radio" id="contact-phone" name="contact-method" required>
+              <label for="contact-whatsapp">WhatsApp</label>
+              <input type="radio" id="contact-whatsapp" name="contact-method" required>
+              <label for="contact-email">Email</label>
+              <input type="radio" id="contact-email" name="contact-method" required>
+            <br>
+            <div class="input-field phone-input">
+              <label>Phone Number
+              <input class="hidden-input" type="tel" id="phone-input" name="phone-number" placeholder="(123) 456-7890" required>
+              </label>
+            </div>
+            <div class="input-field whatsapp-input">
+              <label>WhatsApp
+              <input class="hidden-input" type="tel" id="whatsapp-input" name="whatsapp-number" placeholder="(123) 456-7890" required>
+              </label>
+            </div>
+            <div class="input-field email-input">
+              <label>Email
+              <input class="hidden-input" type="email" id="email-input" name="email" placeholder="youremail@example.com" required>
+              </label>
+            </div>
+          </fieldset>
+          <br><br>
+          <fieldset class="owned-investments">
+            <legend>Please select bellow investments you own or owned:</legend>
+            <span class="owned-investments-span">
+              <label>Stocks
+              <input type="checkbox" id="stocks" name="owned-investments" value="stocks">
+              </label><br>
+              <label>Bonds
+              <input type="checkbox" id="bonds" name="owned-investments" value="bonds">
+              </label><br>
+              <label>Mutual Funds
+              <input type="checkbox" id="mutual-funds" name="owned-investments" value="mutual-funds">
+              </label><br>
+            </span>
+            <span class="owned-investments-span">
+              <label>Cryptocurrency
+              <input type="checkbox" id="cryptocurrency" name="owned-investments" value="cryptocurrency">
+              </label><br>
+              <label>ETFs
+              <input type="checkbox" id="etfs" name="owned-investments" value="etfs">
+              </label><br>
+              <label>Commodities
+              <input type="checkbox" id="commodities" name="owned-investments" value="commodities">
+              </label><br>
+            </span>
+            <span class="owned-investments-span">
+              <label>Certificate of Deposit
+              <input type="checkbox" id="certificate-of-deposit" name="owned-investments" value="certificate-of-deposit">
+              </label><br>
+              <label>Real State
+              <input type="checkbox" id="real-estate" name="owned-investments" value="real-estate">
+              </label><br>
+              <label>Options
+              <input type="checkbox" id="options" name="owned-investments" value="options">
+              </label><br>
+            </span>
+          </fieldset>
+          <br><br>
+          <fieldset class="time-investing">
+            <legend>How long have you been investing?</legend>
+            <label>Years
+              <input class="hidden-input" type="number" id="years-investing" name="years-investing" required>
+            </label>
+          </fieldset>
+        </div>
+      </div>
+      <div class="submit-container">
+        <input class="submit-button" type="submit" value="Submit">
+      </div>
+    </form>
   </main>
-
-  <footer class="footer">
+  <footer>
     <p>&copy; 2024, Marcelo Ruediger & Thomas Andersen. All rights reserved.</p>
   </footer>
 </body>

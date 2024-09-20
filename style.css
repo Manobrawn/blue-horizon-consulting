@@ -11,12 +11,6 @@
   src: url(./Roboto/Roboto-Italic.ttf);
 }
 
-/* @media only screen and (max-width: 760px) {
-  .about-main-container {
-    display: block;
-  }
-} */
-
 :root {
   --dark-color: #1f2937;
   --darker-white: #e5e7eb;
@@ -27,46 +21,71 @@
   --font-large: 36px;
   --font-xl: 48px;
 }
-/*----------- STANDARDS => Don't Change just Overwrite with specifics -----------*/
+/*----------- STANDARDS => Try not change, better overwrite with specifics -----------*/
 * {
   margin: 0;
 }
-
 h1 {
-  padding: 5rem 0 0 6rem; /* This padding preventes the h1 to hide under the <nav> bar! */ 
+  padding: 5rem 0 0 6rem; 
   font-family: "roboto-bold";
   font-size: var(--font-xl);
 }
-
 h2 {
   font-family: "roboto-bold";
   font-size: var(--font-large);
+  line-height: 2rem;
 }
-
+h3 {
+  font-family: "roboto-bold";
+  font-size: var(--font-medium);
+}
 p {
   font-family: "roboto-normal";
   font-size: var(--font-small);
   line-height: 2rem;
+  text-align: center;
 }
-
 figcaption {
-  font-family: "roboto-italic";
-  font-size: 16px;
+  font-family: "roboto-normal";
+  font-size: 14px;
+  color: var(--white-color);
 }
-
 footer {
   text-align: center;
   background-color: var(--dark-color);
+  padding: 20px;
+  color: var(--white-color);
 }
-
-button {
+button { 
   background-color: var(--blue-color);
   color: var(--white-color);
   font-family: "roboto-normal";
-  border: none;
+  border: none;  
   border-radius: 10%;
   width: 100px;
   height: 40px;
+  cursor: pointer;
+} 
+button:hover {
+  background-color: var(--white-color);
+  color: var(--blue-color);
+}
+.anchor {
+  text-decoration: none;
+}
+blockquote {
+  font-family: "roboto-normal";
+  font-size: var(--font-small);
+  line-height: 2rem;
+}
+.standard-img {
+  width: 100%;
+}
+.smaller-img {
+  width: 300px;
+  height: 166.66px;
+  border: 2px solid var(--blue-color);
+  border-radius: 5%;
 }
 /*-------------------------------- NAV-BAR --------------------------------------------*/
 nav {
@@ -76,216 +95,176 @@ nav {
   position: fixed;
   background-color: var(--blue-color);
 }
-
 .nav-left-container {
   display: flex;
   align-items: center;
   margin-left: 5rem;
 }
-
 .logo {
   width: 70px;
   height: 70px;
   margin-right: 1rem;
 }
-
 .nav-logo-name h2 {
-  text-decoration: none; /* Not sure how to remove the underline as the logo name is a link now */
   font-family: "roboto-normal";
   font-size: var(--font-medium);
   color: var(--white-color);
   margin: 0;
 }
-
 .nav-right-container {
   width: 40%;
   display: flex;
   justify-content: space-between;
   padding: 1.5rem 5.5rem 0 0;
 }
-
 .nav-right-container > a {
   font-family: "roboto-normal";
-  text-decoration: none;
   font-size: var(--font-medium);
   color: var(--white-color);
 }
-
-/*-------------- SPECIFICS => about.html ----------------------------------------------*/
+/*----------------------------- SPECIFICS => about.html ------------------------------------------*/
 .main-header-about-us { 
   padding: 0;
   padding-bottom: 2rem;
   color: var(--white-color);
 } 
-
 .subheader-about-us {
   color: var(--darker-white);
+  padding-top: 3rem;
 }
-
-.about-top-container {
+.top-container {
   display: flex;
   justify-content: space-around;
-  padding-top: 10rem;
-  padding-bottom: 2rem;
   background-color: var(--dark-color);
+  padding-top: 6rem;
+  padding-bottom: 4rem;
 }
-
-.about-top-left-container {
+.top-left-container {
   width: 35%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
 }
-
-.about-top-right-container {
-  width: 35%;;
+.top-right-container {
+  width: 35%;
 }
-
-.team-picture {
-  width: 500px;
-
-}
-
-.team-pic-caption {
-  padding-top: 1rem;
-  color: var(--white-color);
-}
-
-.about-join-us-button {
-  margin-bottom: 3rem;
-}
-
 .our-vision-header {
   color: var(--dark-color);
   padding-top: 2rem;
   padding-bottom: 2rem;
   text-align: center;
 }
-
-
-/*-------------- SPECIFICS => index.html ----------------------------------------------*/
-
+.section-container {
+  display: flex;
+}
+.section-container > div {
+  flex: 1; 
+}
+figure {
+  text-align: center;
+  margin-top: 1rem;
+}
+.about-figure-caption {
+  color: var(--dark-color);
+  line-height: 2rem;
+  width: 65%;
+  margin: auto;
+  padding: 1rem 0;
+}
+.section-container > div > h3 {
+  color: var(--dark-color);
+  text-align: center;
+}
+section > hr {
+  width: 30%;
+  margin: auto auto 2rem auto;
+  height: 2px;
+  background-color: black;
+  border: none;
+}
+/*--------------------------------- SPECIFICS => index.html -------------------------------------------*/
 .main-header-homepage { 
   padding: 0;
   padding-bottom: 2rem;
   color: var(--white-color);
 } 
-
 .subheader-homepage {
-  padding-top: 40px;
   color: var(--darker-white);
+  padding-top: 2rem;
 }
-
 .info-section {
   padding-top: 30px;
   text-align: center;
 }
-
 .info-container {
   padding-top: 50px;
+  padding-bottom: 50px;
   display: flex;
   justify-content: space-between;
   gap: 1rem;
-  max-width: 1200px;
   margin: 0 auto;
 }
-
 .info-item {
   text-align: center;
   flex: 1;
 }
-
 .info-box {
-  width: 150px;
-  height: 150px;
+  width: 40%;
+  height: 90%;
   border: 2px solid #0066ff;
   border-radius: 10px;
   margin: 0 auto 5px;
 }
-
 .info-box img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 10px;
 }
-
 .quote-box {
   background-color: var(--darker-white);
-  max-width: 1300px;
-  padding: 80px;
-  margin: 40px auto; 
+  max-width: 80%;
+  padding: 4%;
   border-radius: 10px; 
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 6rem auto;
 }
-
-.homepage-quote p {
-  text-align: center;
-  color: var(--dark-color);
-  font-size: var(--font-large);
-  font-style: italic;
-  margin-bottom: 10px;
-}
-
 .quote-author {
   text-align: end;
   font-weight: bold;
   color: var(--dark-color);
 }
-
 .call-to-action {
-  background-color: var(--blue-color);
-  margin: 100px auto;
+  background-color: var(--dark-color);
+  margin: 0 auto 6rem auto;
   border-radius: 10px;
-  max-width: 900px;
+  max-width: 70%;
 }
-
 .cta-box {
   padding: 30px;
   display: flex;
   justify-content: space-between;
   align-items: center; 
 }
-
 .cta-text-button {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
 }
-
 .call-to-action-text {
   color: var(--white-color);
   flex: 1;
   margin-right: 20px;
 }
-
-.homepage-join-us-button {
-  background-color: var(--blue-color);
-  color: var(--white-color);
-  border: 1px solid var(--white-color);
-  padding: 10px 20px;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.homepage-join-us-button:hover {
-  background-color: var(--white-color);
-  color: var(--blue-color);
-}
-
-
-/*-------------- SPECIFICS => services.html ----------------------------------------------*/
-
+/*------------------------------------ SPECIFICS => services.html ----------------------------------------*/
 .subheader-services {
   color: var(--darker-white);
 }
-
 .services-top-container.first-service {
   padding-top: 150px;
 }
-
 .services-top-container {
   display: flex;
   justify-content: space-around;
@@ -293,7 +272,6 @@ nav {
   padding-bottom: 50px;
   background-color: var(--dark-color);
 }
-
 .services-top-left-container, .services-top-right-container {
   width: 35%;
   display: flex;
@@ -301,40 +279,276 @@ nav {
   align-items: center;
   justify-content: space-between;
 }
-
 .reverse-layout {
   flex-direction: row-reverse;
   background: var(--white-color);
 }
-
 .reverse-layout h1,
 .reverse-layout p,
-.reverse-layout figcaption,
-.reverse-layout button {
+.reverse-layout figcaption {
   color: var(--dark-color);
 }
-
-.reverse-layout .homepage-join-us-button {
+.reverse-layout .reversed-button:hover {
   background-color: var(--dark-color);
-  color: var(--white-color);        
-  border: 1px solid var(--dark-color);
+  color: var(--white-color);
 }
-
-.reverse-layout .homepage-join-us-button:hover {
-  background-color: var(--white-color);
+/*---------------------------------------- signup.html --------------------------------------------------*/
+.form-header {
+  text-align: center;
+  background-color: var(--dark-color);
+  color: var(--white-color);
+  margin-top: 1rem;
+  padding: 1rem 0;
+}
+.invest-exp-headings {
+  font-family: "roboto-bold";
+  font-size: var(--font-small);
+  padding-bottom: 0.5rem;
+  padding-top: 1rem;
+}
+.join-us-form {
+  padding: 2rem;
+  margin: auto auto;
+  width: 80%;
+  background-color: var(--darker-white);
+}
+.form-main-container {
+  display: flex;
+  justify-content: space-around;
+}
+.form-main-container label {
+  font-family: "roboto-normal";
+}
+.form-main-container legend {
+  font-family: "roboto-bold";
+  font-size: var(--font-medium);
+}
+.basic-info input, .basic-info select{
+  padding: 0.5rem;
+  margin: 0.5rem;
+}
+fieldset {
   color: var(--dark-color);
+  border-color: var(--dark-color);
+}
+.owned-investments {
+  display: flex;
+  justify-content: space-around;
+}
+.owned-investments input {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.basic-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.preferred-contact input {
+  padding: 0.5rem;
+  margin-right: 3rem;
+}
+.time-investing input {
+  padding: 0.5rem;
+  margin-left: 1rem;
+}
+.submit-container {
+  display: flex;
+  justify-content: center;
+  margin: 3rem;
+}
+.submit-button {
+  background-color: var(--blue-color);
+  color: var(--white-color);
+  font-family: "roboto-normal";
+  border: none;  
+  border-radius: 10%;
+  width: 100px;
+  height: 40px;
+  cursor: pointer;
+}
+.submit-button:hover {
+  background-color: var(--white-color);
+  color: var(--blue-color);
+}
+.hidden-input {
+  margin: 1rem;
+}
+.input-field {
+  display: none;
+  padding-right: 1rem;
+}
+#contact-phone:checked ~ .phone-input {
+  display: block;
+}
+#contact-whatsapp:checked ~ .whatsapp-input {
+  display: block;
+}
+#contact-email:checked ~ .email-input {
+  display: block;
 }
 
-
-.team-picture {
-  width: 500px;
+@media only screen and (max-width: 1500px) {
+  .nav-logo-name h2 {
+    font-size: var(--font-small);
+  }
+  .nav-right-container a {
+    font-size: var(--font-small);
+  }
+  .top-container {
+    padding: 20px;
+    padding-top: 10%;
+  }
+  .top-left-container, .top-right-container {
+    width: 40%;
+    padding-bottom: 2rem;
+  }
+  .info-section {
+    padding: 20px;
+  }
+  h1 {
+    font-size: 35px;
+  }
+  p {
+    font-size: var(--font-small);
+  }
+  .info-box {
+    width: 100%;
+  }
+  .form-right-container {
+    margin-left: 1rem;
+  }
+  h2 {
+    font-size: var(--font-medium);
+    line-height: 3rem;
+  }
+  .about-img-container img {    /*Unexpected Behaviour*/
+    padding-top: 1rem;
+  }
 }
 
+@media only screen and (max-width: 950px) {
+  .top-container {
+    flex-direction: column;
+    padding: 20px;
+    padding-top: 20%;
+  }
+  .top-left-container, .top-right-container {
+    width: 100%;
+  }
+  .services-top-container {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 1rem;
+  }
+  .services-top-left-container,
+  .services-top-right-container {
+    width: 100%;
+    padding: 0;
+    text-align: center;
+  }
+  .services-top-left-container h1 {
+    font-size: 30px;
+  }
+  .reverse-layout button {
+    display: none;  
+  }
+  .info-container {
+    flex-direction: column;
+    padding-top: 1rem;
+  }
+  .info-item {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .info-box {
+    width: 100%;
+    height: auto;
+  }
+  .standard-img {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .info-box {
+    width: 70%;
+  }
+  h1 {
+    font-size: 30px;
+  }
+  p {
+    font-size: 17px;
+  }
+  .our-services-homepage {
+    line-height: 4rem;
+  }
+  .our-services-homepage-hr {
+    width: 50%;
+  }
+  .quote-box {
+    margin-top: 0;
+  }
+  .call-to-action-text {
+    display: none;
+  }
+  .cta-box {
+    justify-content: center;
+  }
+  .nav .logo {
+    justify-items: left;
+  }
+  .nav-logo-name {
+    display: none;
+  }
+  .nav-right-container a {
+    font-size: var(--font-small);
+    padding: 0.8rem;
+    padding-bottom: 2rem;
+  }
+  .nav-left-container {
+    margin-left: 0.8rem;
+  }
+  .section-container {
+    flex-direction: column;
+  }
+  .form-main-container {
+    flex-direction: column;
+  }
+  .owned-investments {
+    flex-direction: column;
+  }
+  .owned-investments-span {
+    display: inline-block;
+  }
+  .join-us-main-header {
+    padding-top: 8rem;
+    padding-left: 1rem;
+  }
+  .form-main-container legend {
+    font-size: var(--font-small);
+  }
+  footer p {
+    font-size: 14px;
+  }
+  figcaption {
+    font-size: 12px;
+  }
+  .our-vision-header {
+    padding: none;
+    line-height: normal;
+  }
+  .form-header {
+    padding: 1rem;
+  }
+  .preferred-contact {
+    display: flex;
+    flex-direction: column;
+  }
+}
 
-
-/* -------------------------- FOOTER -------------------------- */
-
-.footer {
-  padding: 20px;
-  color: var(--white-color)
+@media only screen and (max-width: 430px) {
+  .top-container {
+    padding-top: 40%;
+  }
 }
