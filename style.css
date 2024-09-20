@@ -27,7 +27,7 @@
 }
 
 h1 {
-  padding: 5rem 0 0 6rem; /* This padding preventes the h1 to hide under the <nav> bar! */
+  padding: 5rem 0 0 6rem; /* This padding preventes the h1 to hide under the <nav> bar! */ 
   font-family: "roboto-bold";
   font-size: var(--font-xl);
 }
@@ -220,7 +220,6 @@ section > hr {
   padding: 0;
   padding-bottom: 2rem;
   color: var(--white-color);
-
 } 
 
 .subheader-homepage {
@@ -346,25 +345,135 @@ section > hr {
 /*------------------ signup.html ------------------------------------------------------*/
 .form-header {
   text-align: center;
-  padding: 2rem 0;
+  
   background-color: var(--dark-color);
   color: var(--white-color);
+  margin-top: 1rem;
+  padding: 1rem 0;
+}
+
+.invest-exp-headings {
+  font-family: "roboto-bold";
+  font-size: var(--font-small);
+  padding-bottom: 0.5rem;
+  padding-top: 1rem;
 }
 
 .join-us-form {
-  padding: 2rem 0;
+  padding: 2rem;
   margin: auto auto;
-  text-align: center;
   width: 80%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  background-color: var(--darker-white);
 }
 
+.form-main-container {
+  display: flex;
+  justify-content: space-around;
+}
 
-/*-------------------- media query ----------------------------------*/
+.form-main-container label {
+  font-family: "roboto-normal";
+}
 
+.form-main-container legend {
+  font-family: "roboto-bold";
+  font-size: var(--font-medium);
+}
 
+.basic-info input, .basic-info select{
+  padding: 0.5rem;
+  margin: 0.5rem;
+}
+
+fieldset {
+  color: var(--dark-color);
+  border-color: var(--dark-color);
+}
+
+.owned-investments {
+  display: flex;
+  justify-content: space-around;
+}
+
+.owned-investments input {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.basic-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.preferred-contact input {
+  padding: 0.5rem;
+  margin-right: 3rem;
+}
+
+.time-investing input {
+  padding: 0.5rem;
+  margin-left: 1rem;
+}
+
+.submit-container {
+  display: flex;
+  justify-content: center;
+  margin: 3rem;
+}
+
+.submit-button {
+  background-color: var(--blue-color);
+  color: var(--white-color);
+  font-family: "roboto-normal";
+  border: none;  
+  border-radius: 10%;
+  width: 100px;
+  height: 40px;
+  cursor: pointer;
+}
+.submit-button:hover {
+  background-color: var(--white-color);
+  color: var(--blue-color);
+}
+
+.hidden-input {
+  margin: 1rem;
+}
+
+.input-field {
+  display: none;
+  padding-right: 1rem;
+}
+#contact-phone:checked ~ .phone-input {
+  display: block;
+}
+#contact-whatsapp:checked ~ .whatsapp-input {
+  display: block;
+}
+#contact-email:checked ~ .email-input {
+  display: block;
+}
+
+@media only screen and (max-width: 950px) {
+  .form-main-container {
+    flex-direction: column;
+  }
+  
+  .owned-investments {
+    flex-direction: column;
+  }
+
+  .owned-investments-span {
+    display: inline-block;
+  }
+} 
+
+@media only screen and (max-width: 1500px) {
+ .form-right-container {
+  margin-left: 1rem;
+ }
+} 
 @media only screen and (max-width: 1500px) {
   .nav-logo-name h2 {
     font-size: 20px;
