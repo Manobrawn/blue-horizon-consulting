@@ -420,7 +420,7 @@ fieldset {
   }
   h2 {
     font-size: var(--font-medium);
-    line-height: 5rem;
+    line-height: 3rem;
   }
   .about-img-container img {    /*Unexpected Behaviour*/
     padding-top: 1rem;
