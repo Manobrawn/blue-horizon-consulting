@@ -89,7 +89,6 @@ blockquote {
 
 .standard-img {
   width: 100%;
-  border: 2px solid var(--dark-color);
 }
 
 .smaller-img {
@@ -177,17 +176,12 @@ nav {
   text-align: center;
 }
 
-.imgs-container {
-  display: flex;
-  justify-content: space-around;
-}
-
 .section-container {
   display: flex;
 }
 
 .section-container > div {
-  flex: 1; /* Each container takes equal space */
+  flex: 1; 
 }
 
 figure {
@@ -225,7 +219,7 @@ section > hr {
 
 .subheader-homepage {
   color: var(--darker-white);
-  padding-top: 3rem;
+  padding-top: 2rem;
 }
 
 .info-section {
@@ -500,6 +494,12 @@ fieldset {
     line-height: 5rem;
   }
 
+  /*-------------------------- HERE this is affecting ALL -------------------------------------------*/
+  .about-img-container img {    
+    padding-top: 1rem;
+  }
+
+
 }
 
 @media only screen and (max-width: 950px) {
@@ -534,6 +534,7 @@ fieldset {
 
   .reverse-layout button {
     display: none;
+    
   }
 
   .info-container {
@@ -638,6 +639,12 @@ fieldset {
   figcaption {
     font-size: 12px;
   }
+
+.our-vision-header {
+    padding: none;
+    line-height: normal;
+  }
+
 }
 
 
