@@ -43,6 +43,7 @@ p {
   font-family: "roboto-normal";
   font-size: var(--font-small);
   line-height: 2rem;
+  text-align: center;
 }
 figcaption {
   font-family: "roboto-normal";
