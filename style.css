@@ -51,7 +51,7 @@ p {
 figcaption {
   font-family: "roboto-normal";
   font-size: 16px;
-  color: var(--white-color);
+  color: var(--dark-color);
 }
 
 footer {
@@ -116,9 +116,17 @@ nav {
   width: 70px;
   height: 70px;
   margin-right: 1rem;
+  display: inline-block;
 }
 
-.nav-logo-name h2 {
+.logo-header {
+  color: var(--white-color);
+  margin-bottom: 1rem;
+  float: right;
+  padding-top: 2rem;
+}
+
+.nav-logo-name {
   font-family: "roboto-normal";
   font-size: var(--font-medium);
   color: var(--white-color);
@@ -146,7 +154,7 @@ nav {
 
 .subheader-about-us {
   color: var(--darker-white);
-  padding-top: 3rem;
+  padding-top: 0;
 }
 
 .top-container {
@@ -338,7 +346,7 @@ section > hr {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 .reverse-layout {
@@ -359,11 +367,9 @@ section > hr {
 /*------------------ signup.html ------------------------------------------------------*/
 .form-header {
   text-align: center;
-  
-  background-color: var(--dark-color);
-  color: var(--white-color);
-  margin-top: 1rem;
-  padding: 1rem 0;
+  padding-top: 7rem;
+  color: var(--dark-color);
+  margin-bottom: 2rem;
 }
 
 .invest-exp-headings {
@@ -378,6 +384,8 @@ section > hr {
   margin: auto auto;
   width: 80%;
   background-color: var(--darker-white);
+  border-style: dashed;
+  margin-bottom: 4rem;
 }
 
 .form-main-container {
