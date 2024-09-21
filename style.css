@@ -103,7 +103,7 @@ nav {
   display: flex;
   justify-content: space-between;
   position: fixed;
-  background-color: var(--blue-color);
+  background-color: var(--dark-color);
 }
 
 .nav-left-container {
@@ -228,7 +228,7 @@ section > hr {
 }
 
 .info-section {
-  padding-top: 30px;
+  padding-top: 40px;
   text-align: center;
 }
 
@@ -239,6 +239,7 @@ section > hr {
   justify-content: space-between;
   gap: 1rem;
   margin: 0 auto;
+  max-width: 60%;
 }
 
 .info-item {
@@ -277,7 +278,7 @@ section > hr {
 }
 
 .call-to-action {
-  background-color: var(--dark-color);
+  background-color: var(--blue-color);
   margin: 0 auto 6rem auto;
   border-radius: 10px;
   max-width: 70%;
@@ -302,6 +303,19 @@ section > hr {
   flex: 1;
   margin-right: 20px;
 }
+
+.cta-box button { 
+  background-color: var(--blue-color);
+  color: var(--white-color);
+  font-family: "roboto-normal";
+  border: none;  
+  border-radius: 10%;
+  width: 100px;
+  height: 40px;
+  cursor: pointer;
+  border-style: solid;
+} 
+
 /*-------------- SPECIFICS => services.html ----------------------------------------------*/
 .subheader-services {
   color: var(--darker-white);
