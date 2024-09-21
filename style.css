@@ -228,7 +228,7 @@ section > hr {
 }
 
 .info-section {
-  padding-top: 40px;
+  padding-top: 50px;
   text-align: center;
 }
 
@@ -236,7 +236,7 @@ section > hr {
   padding-top: 50px;
   padding-bottom: 50px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   gap: 1rem;
   margin: 0 auto;
   max-width: 60%;
@@ -248,11 +248,11 @@ section > hr {
 }
 
 .info-box {
-  width: 40%;
+  width: 90%;
   height: 90%;
   border: 2px solid #0066ff;
   border-radius: 10px;
-  margin: 0 auto 5px;
+  margin: 0 auto 7px;
 }
 
 .info-box img {
