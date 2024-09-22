@@ -27,108 +27,110 @@
   </header>  
   <main>
     <h2 class="form-header">Please fill out the form bellow and our Specialists will contact you ASAP</h2>
-    <form class="join-us-form form-main-container" action="submit" method="post"> 
-      <fieldset class="basic-info">
-        <legend>Basic Information</legend>
-        <label>Full Name:
-          <input type="text" id="name" name="name" placeholder="Enter your full name" required>
-        </label>
-        <br><br>
-        <label>Birth Date:
-          <input type="date" id="birthdate" name="birthdate" required>
-        </label>
-        <br><br>
-        <label>Country:
-          <select id="country" name="country" required>
-            <option value="" disabled selected>Select your country</option>
-            <option value="serbia">Serbia</option>
-            <option value="usa">United States</option>
-            <option value="germany">Germany</option>
-            <option value="brazil">Brazil</option>
-            <option value="canada">Canada</option>
-            <option value="uk">United Kingdom</option>
-            <option value="australia">Australia</option>
-          </select>
-        </label>
-        <br><br>
-        <label>Preferred Language:
-          <select id="preferred-language" name="preferred-language" required>
-            <option value="" disabled selected>Select your preferred Language</option>
-            <option value="english">English</option>
-            <option value="spanish">Spanish</option>
-            <option value="portuguese">Portuguese</option>
-            <option value="german">German</option>
-          </select><br>
-        </label>
-      </fieldset>
-      <br><br>
-      <div class="form-right-container">
-        <fieldset class="preferred-contact form-right-container">
-          <legend>How do you prefer to be contacted?</legend>
-          <label for="contact-phone">Phone </label>
-          <input type="radio" id="contact-phone" name="contact-method" required>
-          <label for="contact-whatsapp">WhatsApp</label>
-          <input type="radio" id="contact-whatsapp" name="contact-method" required>
-          <label for="contact-email">Email</label>
-          <input type="radio" id="contact-email" name="contact-method" required>
-          <br>
-          <span class="input-field phone-input">
-            <label for="phone-input">Phone Number</label>
-            <input class="hidden-input" type="tel" id="phone-input" name="phone-number" placeholder="(123) 456-7890" required>
-          </span>
-          <span class="input-field whatsapp-input">
-            <label for="whatsapp-input">WhatsApp</label>
-            <input class="hidden-input" type="tel" id="whatsapp-input" name="whatsapp-number" placeholder="(123) 456-7890" required>
-          </span>
-          <span class="input-field email-input">
-            <label for="email-input">Email</label>
-            <input class="hidden-input" type="email" id="email-input" name="email" placeholder="youremail@example.com" required>
-          </span>
-        </fieldset>
-        <br><br>
-        <fieldset class="owned-investments">
-          <legend>Please select bellow investments you own or owned:</legend>
-          <span class="owned-investments-span">
-            <label for="stocks">Stocks</label>
-            <input type="checkbox" id="stocks" name="owned-investments" value="stocks">
-            <br>
-            <label for="bonds">Bonds</label>
-            <input type="checkbox" id="bonds" name="owned-investments" value="bonds">
-            <br>
-            <label for="mutual-funds">Mutual Funds</label>
-            <input type="checkbox" id="mutual-funds" name="owned-investments" value="mutual-funds">
-            <br>
-          </span>
-          <span class="owned-investments-span">
-            <label for="cryptocurrency">Cryptocurrency</label>
-            <input type="checkbox" id="cryptocurrency" name="owned-investments" value="cryptocurrency">
-            <br>
-            <label for="etfs">ETFs</label>
-            <input type="checkbox" id="etfs" name="owned-investments" value="etfs">
-            <br>
-            <label for="commodities">Commodities</label>
-            <input type="checkbox" id="commodities" name="owned-investments" value="commodities">
-            <br>
-          </span>
-          <span class="owned-investments-span">
-            <label for="certificate-of-deposit">Certificate of Deposit</label>
-            <input type="checkbox" id="certificate-of-deposit" name="owned-investments" value="certificate-of-deposit">
-            <br>
-            <label for="real-estate">Real State</label>
-            <input type="checkbox" id="real-estate" name="owned-investments" value="real-estate">
-            <br>
-            <label for="options">Options</label>
-            <input type="checkbox" id="options" name="owned-investments" value="options">
-            <br>
-          </span>
-        </fieldset>
-        <br><br>
-        <fieldset class="time-investing">
-          <legend>How long have you been investing?</legend>
-          <label>Years
-            <input class="hidden-input" type="number" id="years-investing" name="years-investing" required>
+    <form class="join-us-form" action="submit" method="post"> 
+      <div class="form-main-container">
+        <fieldset class="basic-info">
+          <legend>Basic Information</legend>
+          <label>Full Name:
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+          </label>
+          <br><br>
+          <label>Birth Date:
+            <input type="date" id="birthdate" name="birthdate" required>
+          </label>
+          <br><br>
+          <label>Country:
+            <select id="country" name="country" required>
+              <option value="" disabled selected>Select your country</option>
+              <option value="serbia">Serbia</option>
+              <option value="usa">United States</option>
+              <option value="germany">Germany</option>
+              <option value="brazil">Brazil</option>
+              <option value="canada">Canada</option>
+              <option value="uk">United Kingdom</option>
+              <option value="australia">Australia</option>
+            </select>
+          </label>
+          <br><br>
+          <label>Preferred Language:
+            <select id="preferred-language" name="preferred-language" required>
+              <option value="" disabled selected>Select your preferred Language</option>
+              <option value="english">English</option>
+              <option value="spanish">Spanish</option>
+              <option value="portuguese">Portuguese</option>
+              <option value="german">German</option>
+            </select><br>
           </label>
         </fieldset>
+        <br><br>
+        <div class="form-right-container">
+          <fieldset class="preferred-contact">
+            <legend>How do you prefer to be contacted?</legend>
+            <label for="contact-phone">Phone </label>
+            <input type="radio" id="contact-phone" name="contact-method" required>
+            <label for="contact-whatsapp">WhatsApp</label>
+            <input type="radio" id="contact-whatsapp" name="contact-method" required>
+            <label for="contact-email">Email</label>
+            <input type="radio" id="contact-email" name="contact-method" required>
+            <br>
+            <span class="input-field phone-input">
+              <label for="phone-input">Phone Number</label>
+              <input class="hidden-input" type="tel" id="phone-input" name="phone-number" placeholder="(123) 456-7890" required>
+            </span>
+            <span class="input-field whatsapp-input">
+              <label for="whatsapp-input">WhatsApp</label>
+              <input class="hidden-input" type="tel" id="whatsapp-input" name="whatsapp-number" placeholder="(123) 456-7890" required>
+            </span>
+            <span class="input-field email-input">
+              <label for="email-input">Email</label>
+              <input class="hidden-input" type="email" id="email-input" name="email" placeholder="youremail@example.com" required>
+            </span>
+          </fieldset>
+          <br><br>
+          <fieldset class="owned-investments">
+            <legend>Please select bellow investments you own or owned:</legend>
+            <span class="owned-investments-span">
+              <label for="stocks">Stocks</label>
+              <input type="checkbox" id="stocks" name="owned-investments" value="stocks">
+              <br>
+              <label for="bonds">Bonds</label>
+              <input type="checkbox" id="bonds" name="owned-investments" value="bonds">
+              <br>
+              <label for="mutual-funds">Mutual Funds</label>
+              <input type="checkbox" id="mutual-funds" name="owned-investments" value="mutual-funds">
+              <br>
+            </span>
+            <span class="owned-investments-span">
+              <label for="cryptocurrency">Cryptocurrency</label>
+              <input type="checkbox" id="cryptocurrency" name="owned-investments" value="cryptocurrency">
+              <br>
+              <label for="etfs">ETFs</label>
+              <input type="checkbox" id="etfs" name="owned-investments" value="etfs">
+              <br>
+              <label for="commodities">Commodities</label>
+              <input type="checkbox" id="commodities" name="owned-investments" value="commodities">
+              <br>
+            </span>
+            <span class="owned-investments-span">
+              <label for="certificate-of-deposit">Certificate of Deposit</label>
+              <input type="checkbox" id="certificate-of-deposit" name="owned-investments" value="certificate-of-deposit">
+              <br>
+              <label for="real-estate">Real State</label>
+              <input type="checkbox" id="real-estate" name="owned-investments" value="real-estate">
+              <br>
+              <label for="options">Options</label>
+              <input type="checkbox" id="options" name="owned-investments" value="options">
+              <br>
+            </span>
+          </fieldset>
+          <br><br>
+          <fieldset class="time-investing">
+            <legend>How long have you been investing?</legend>
+            <label>Years
+              <input class="hidden-input" type="number" id="years-investing" name="years-investing" required>
+            </label>
+          </fieldset>
+        </div>
       </div>
       <div class="submit-container">
         <input class="submit-button" type="submit" value="Submit">
