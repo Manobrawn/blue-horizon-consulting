@@ -47,8 +47,8 @@ p {
 }
 figcaption {
   font-family: "roboto-normal";
-  font-size: 14px;
-  color: var(--white-color);
+  font-size: 16px;
+  color: var(--dark-color);
 }
 footer {
   text-align: center;
@@ -93,7 +93,7 @@ nav {
   display: flex;
   justify-content: space-between;
   position: fixed;
-  background-color: var(--blue-color);
+  background-color: var(--dark-color);
 }
 .nav-left-container {
   display: flex;
@@ -104,8 +104,17 @@ nav {
   width: 70px;
   height: 70px;
   margin-right: 1rem;
+  display: inline-block;
 }
-.nav-logo-name h2 {
+
+.logo-header {
+  color: var(--white-color);
+  margin-bottom: 1rem;
+  float: right;
+  padding-top: 2rem;
+}
+
+.nav-logo-name {
   font-family: "roboto-normal";
   font-size: var(--font-medium);
   color: var(--white-color);
@@ -130,7 +139,7 @@ nav {
 } 
 .subheader-about-us {
   color: var(--darker-white);
-  padding-top: 3rem;
+  padding-top: 0;
 }
 .top-container {
   display: flex;
@@ -194,27 +203,28 @@ section > hr {
   padding-top: 2rem;
 }
 .info-section {
-  padding-top: 30px;
+  padding-top: 50px;
   text-align: center;
 }
 .info-container {
   padding-top: 50px;
   padding-bottom: 50px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   gap: 1rem;
   margin: 0 auto;
+  max-width: 60%;
 }
 .info-item {
   text-align: center;
   flex: 1;
 }
 .info-box {
-  width: 40%;
+  width: 90%;
   height: 90%;
   border: 2px solid #0066ff;
   border-radius: 10px;
-  margin: 0 auto 5px;
+  margin: 0 auto 7px;
 }
 .info-box img {
   width: 100%;
@@ -236,7 +246,7 @@ section > hr {
   color: var(--dark-color);
 }
 .call-to-action {
-  background-color: var(--dark-color);
+  background-color: var(--blue-color);
   margin: 0 auto 6rem auto;
   border-radius: 10px;
   max-width: 70%;
@@ -258,7 +268,21 @@ section > hr {
   flex: 1;
   margin-right: 20px;
 }
-/*------------------------------------ SPECIFICS => services.html ----------------------------------------*/
+
+.cta-box button { 
+  background-color: var(--blue-color);
+  color: var(--white-color);
+  font-family: "roboto-normal";
+  border: none;  
+  border-radius: 10%;
+  width: 100px;
+  height: 40px;
+  cursor: pointer;
+  border-style: solid;
+} 
+
+/*-------------- SPECIFICS => services.html ----------------------------------------------*/
+
 .subheader-services {
   color: var(--darker-white);
 }
@@ -277,7 +301,7 @@ section > hr {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 .reverse-layout {
   flex-direction: row-reverse;
@@ -295,10 +319,10 @@ section > hr {
 /*---------------------------------------- signup.html --------------------------------------------------*/
 .form-header {
   text-align: center;
-  background-color: var(--dark-color);
-  color: var(--white-color);
-  margin-top: 1rem;
-  padding: 1rem 0;
+
+  padding-top: 7rem;
+  color: var(--dark-color);
+  margin-bottom: 2rem;
 }
 .invest-exp-headings {
   font-family: "roboto-bold";
@@ -311,6 +335,8 @@ section > hr {
   margin: auto auto;
   width: 80%;
   background-color: var(--darker-white);
+  border-style: dashed;
+  margin-bottom: 4rem;
 }
 .form-main-container {
   display: flex;
