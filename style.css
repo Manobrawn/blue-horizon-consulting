@@ -335,7 +335,6 @@ section > hr {
   margin: auto auto;
   width: 80%;
   background-color: var(--darker-white);
-  border-style: dashed;
   margin-bottom: 4rem;
 }
 .form-main-container {
