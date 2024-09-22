@@ -21,47 +21,42 @@
   --font-large: 36px;
   --font-xl: 48px;
 }
-/*----------- STANDARDS => Don't Change just Overwrite with specifics -----------*/
+/*----------- STANDARDS => Try not change, better overwrite with specifics -----------*/
 * {
   margin: 0;
 }
-
 h1 {
-  padding: 5rem 0 0 6rem; /* This padding preventes the h1 to hide under the <nav> bar! */ 
+  padding: 5rem 0 0 6rem; 
   font-family: "roboto-bold";
   font-size: var(--font-xl);
 }
-
 h2 {
   font-family: "roboto-bold";
   font-size: var(--font-large);
+  line-height: 2rem;
 }
-
 h3 {
   font-family: "roboto-bold";
   font-size: var(--font-medium);
 }
-
 p {
   font-family: "roboto-normal";
   font-size: var(--font-small);
   line-height: 2rem;
+  text-align: center;
 }
-
 figcaption {
   font-family: "roboto-normal";
   font-size: 16px;
   color: var(--dark-color);
 }
-
 footer {
   text-align: center;
   background-color: var(--dark-color);
   padding: 20px;
-  color: var(--white-color)
+  color: var(--white-color);
 }
- 
-button { /* stadardlized buttons, anchors and blockquotes */
+button { 
   background-color: var(--blue-color);
   color: var(--white-color);
   font-family: "roboto-normal";
@@ -75,22 +70,17 @@ button:hover {
   background-color: var(--white-color);
   color: var(--blue-color);
 }
-
 .anchor {
   text-decoration: none;
 }
-
 blockquote {
   font-family: "roboto-normal";
   font-size: var(--font-small);
   line-height: 2rem;
 }
-
 .standard-img {
   width: 100%;
-  border: 2px solid var(--dark-color);
 }
-
 .smaller-img {
   width: 300px;
   height: 166.66px;
@@ -105,13 +95,11 @@ nav {
   position: fixed;
   background-color: var(--dark-color);
 }
-
 .nav-left-container {
   display: flex;
   align-items: center;
   margin-left: 5rem;
 }
-
 .logo {
   width: 70px;
   height: 70px;
@@ -132,31 +120,27 @@ nav {
   color: var(--white-color);
   margin: 0;
 }
-
 .nav-right-container {
   width: 40%;
   display: flex;
   justify-content: space-between;
   padding: 1.5rem 5.5rem 0 0;
 }
-
 .nav-right-container > a {
   font-family: "roboto-normal";
   font-size: var(--font-medium);
   color: var(--white-color);
 }
-/*-------------- SPECIFICS => about.html ----------------------------------------------*/
+/*----------------------------- SPECIFICS => about.html ------------------------------------------*/
 .main-header-about-us { 
   padding: 0;
   padding-bottom: 2rem;
   color: var(--white-color);
 } 
-
 .subheader-about-us {
   color: var(--darker-white);
   padding-top: 0;
 }
-
 .top-container {
   display: flex;
   justify-content: space-around;
@@ -164,7 +148,6 @@ nav {
   padding-top: 6rem;
   padding-bottom: 4rem;
 }
-
 .top-left-container {
   width: 35%;
   display: flex;
@@ -172,50 +155,36 @@ nav {
   align-items: center;
   justify-content: space-between;
 }
-
 .top-right-container {
   width: 35%;
 }
-
 .our-vision-header {
   color: var(--dark-color);
   padding-top: 2rem;
   padding-bottom: 2rem;
   text-align: center;
 }
-
-.imgs-container {
-  display: flex;
-  justify-content: space-around;
-}
-
 .section-container {
   display: flex;
 }
-
 .section-container > div {
-  flex: 1; /* Each container takes equal space */
+  flex: 1; 
 }
-
 figure {
   text-align: center;
   margin-top: 1rem;
 }
-
 .about-figure-caption {
   color: var(--dark-color);
   line-height: 2rem;
   width: 65%;
   margin: auto;
   padding: 1rem 0;
-
 }
-
 .section-container > div > h3 {
   color: var(--dark-color);
   text-align: center;
 }
-
 section > hr {
   width: 30%;
   margin: auto auto 2rem auto;
@@ -223,23 +192,20 @@ section > hr {
   background-color: black;
   border: none;
 }
-/*-------------- SPECIFICS => index.html ----------------------------------------------*/
+/*--------------------------------- SPECIFICS => index.html -------------------------------------------*/
 .main-header-homepage { 
   padding: 0;
   padding-bottom: 2rem;
   color: var(--white-color);
 } 
-
 .subheader-homepage {
-  padding-top: 40px;
   color: var(--darker-white);
+  padding-top: 2rem;
 }
-
 .info-section {
   padding-top: 50px;
   text-align: center;
 }
-
 .info-container {
   padding-top: 50px;
   padding-bottom: 50px;
@@ -249,12 +215,10 @@ section > hr {
   margin: 0 auto;
   max-width: 60%;
 }
-
 .info-item {
   text-align: center;
   flex: 1;
 }
-
 .info-box {
   width: 90%;
   height: 90%;
@@ -262,15 +226,13 @@ section > hr {
   border-radius: 10px;
   margin: 0 auto 7px;
 }
-
 .info-box img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 10px;
 }
-
-.quote-box {  /*Avoid to use pixel for containers use scalable rules like %*/
+.quote-box {
   background-color: var(--darker-white);
   max-width: 80%;
   padding: 4%;
@@ -278,34 +240,29 @@ section > hr {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin: 6rem auto;
 }
-
 .quote-author {
   text-align: end;
   font-weight: bold;
   color: var(--dark-color);
 }
-
 .call-to-action {
   background-color: var(--blue-color);
   margin: 0 auto 6rem auto;
   border-radius: 10px;
   max-width: 70%;
 }
-
 .cta-box {
   padding: 30px;
   display: flex;
   justify-content: space-between;
   align-items: center; 
 }
-
 .cta-text-button {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
 }
-
 .call-to-action-text {
   color: var(--white-color);
   flex: 1;
@@ -325,14 +282,13 @@ section > hr {
 } 
 
 /*-------------- SPECIFICS => services.html ----------------------------------------------*/
+
 .subheader-services {
   color: var(--darker-white);
 }
-
 .services-top-container.first-service {
   padding-top: 150px;
 }
-
 .services-top-container {
   display: flex;
   justify-content: space-around;
@@ -340,7 +296,6 @@ section > hr {
   padding-bottom: 50px;
   background-color: var(--dark-color);
 }
-
 .services-top-left-container, .services-top-right-container {
   width: 35%;
   display: flex;
@@ -348,37 +303,33 @@ section > hr {
   align-items: center;
   justify-content: space-evenly;
 }
-
 .reverse-layout {
   flex-direction: row-reverse;
   background: var(--white-color);
 }
-
 .reverse-layout h1,
 .reverse-layout p,
 .reverse-layout figcaption {
   color: var(--dark-color);
 }
-
 .reverse-layout .reversed-button:hover {
   background-color: var(--dark-color);
   color: var(--white-color);
 }
-/*------------------ signup.html ------------------------------------------------------*/
+/*---------------------------------------- signup.html --------------------------------------------------*/
 .form-header {
   text-align: center;
+
   padding-top: 7rem;
   color: var(--dark-color);
   margin-bottom: 2rem;
 }
-
 .invest-exp-headings {
   font-family: "roboto-bold";
   font-size: var(--font-small);
   padding-bottom: 0.5rem;
   padding-top: 1rem;
 }
-
 .join-us-form {
   padding: 2rem;
   margin: auto auto;
@@ -387,63 +338,51 @@ section > hr {
   border-style: dashed;
   margin-bottom: 4rem;
 }
-
 .form-main-container {
   display: flex;
   justify-content: space-around;
 }
-
 .form-main-container label {
   font-family: "roboto-normal";
 }
-
 .form-main-container legend {
   font-family: "roboto-bold";
   font-size: var(--font-medium);
 }
-
 .basic-info input, .basic-info select{
   padding: 0.5rem;
   margin: 0.5rem;
 }
-
 fieldset {
   color: var(--dark-color);
   border-color: var(--dark-color);
 }
-
 .owned-investments {
   display: flex;
   justify-content: space-around;
 }
-
 .owned-investments input {
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
-
 .basic-info {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
-
 .preferred-contact input {
   padding: 0.5rem;
   margin-right: 3rem;
 }
-
 .time-investing input {
   padding: 0.5rem;
   margin-left: 1rem;
 }
-
 .submit-container {
   display: flex;
   justify-content: center;
   margin: 3rem;
 }
-
 .submit-button {
   background-color: var(--blue-color);
   color: var(--white-color);
@@ -458,11 +397,9 @@ fieldset {
   background-color: var(--white-color);
   color: var(--blue-color);
 }
-
 .hidden-input {
   margin: 1rem;
 }
-
 .input-field {
   display: none;
   padding-right: 1rem;
@@ -477,173 +414,167 @@ fieldset {
   display: block;
 }
 
-@media only screen and (max-width: 950px) {
-  .form-main-container {
-    flex-direction: column;
-  }
-  
-  .owned-investments {
-    flex-direction: column;
-  }
-
-  .owned-investments-span {
-    display: inline-block;
-  }
-} 
-
-@media only screen and (max-width: 1500px) {
- .form-right-container {
-  margin-left: 1rem;
- }
-} 
 @media only screen and (max-width: 1500px) {
   .nav-logo-name h2 {
-    font-size: 20px;
+    font-size: var(--font-small);
   }
-
-  .nav-right-container a{
-    font-size: 20px;
+  .nav-right-container a {
+    font-size: var(--font-small);
   }
-
   .top-container {
     padding: 20px;
     padding-top: 10%;
   }
-
   .top-left-container, .top-right-container {
-    width: 50%;
+    width: 40%;
+    padding-bottom: 2rem;
   }
-
   .info-section {
     padding: 20px;
   }
-
   h1 {
     font-size: 35px;
   }
-
   p {
-    font-size: 15px;
+    font-size: var(--font-small);
   }
-
   .info-box {
     width: 100%;
   }
-
+  .form-right-container {
+    margin-left: 1rem;
+  }
+  h2 {
+    font-size: var(--font-medium);
+    line-height: 3rem;
+  }
+  .about-img-container img {    /*Unexpected Behaviour*/
+    padding-top: 1rem;
+  }
 }
 
 @media only screen and (max-width: 950px) {
-
   .top-container {
     flex-direction: column;
     padding: 20px;
     padding-top: 20%;
   }
-
   .top-left-container, .top-right-container {
     width: 100%;
   }
-
   .services-top-container {
     flex-direction: column;
     align-items: center;
     width: 100%;
     box-sizing: border-box;
-    padding: 0 5% 3;
+    padding: 1rem;
   }
-
   .services-top-left-container,
   .services-top-right-container {
     width: 100%;
     padding: 0;
     text-align: center;
   }
-
   .services-top-left-container h1 {
     font-size: 30px;
   }
-
   .reverse-layout button {
-    display: none;
+    display: none;  
   }
-
   .info-container {
     flex-direction: column;
-    align-items: center;
+    padding-top: 1rem;
   }
-
   .info-item {
     width: 100%;
     margin-bottom: 20px;
   }
-
   .info-box {
     width: 100%;
     height: auto;
   }
-
   .standard-img {
     width: 100%;
     margin-top: 20px;
   }
-
+  .info-box {
+    width: 70%;
+  }
   h1 {
     font-size: 30px;
   }
-
   p {
     font-size: 17px;
   }
-
-  h2 {
-    font-size: 25px;
+  .our-services-homepage {
+    line-height: 4rem;
   }
-
+  .our-services-homepage-hr {
+    width: 50%;
+  }
   .quote-box {
     margin-top: 0;
   }
-
   .call-to-action-text {
     display: none;
   }
-
   .cta-box {
     justify-content: center;
   }
-
   .nav .logo {
     justify-items: left;
   }
-
   .nav-logo-name {
     display: none;
   }
-
   .nav-right-container a {
     font-size: var(--font-small);
-    padding: 1rem;
+    padding: 0.8rem;
     padding-bottom: 2rem;
   }
-
-  /* .nav-right-container {
-    padding: 1.5rem 1 1 1.5rem;
-  } */
-
   .nav-left-container {
-    margin-left: 0;
+    margin-left: 0.8rem;
   }
-
   .section-container {
     flex-direction: column;
   }
-
-
+  .form-main-container {
+    flex-direction: column;
+  }
+  .owned-investments {
+    flex-direction: column;
+  }
+  .owned-investments-span {
+    display: inline-block;
+  }
+  .join-us-main-header {
+    padding-top: 8rem;
+    padding-left: 1rem;
+  }
+  .form-main-container legend {
+    font-size: var(--font-small);
+  }
+  footer p {
+    font-size: 14px;
+  }
+  figcaption {
+    font-size: 12px;
+  }
+  .our-vision-header {
+    padding: none;
+    line-height: normal;
+  }
+  .form-header {
+    padding: 1rem;
+  }
+  .preferred-contact {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 @media only screen and (max-width: 430px) {
-
   .top-container {
     padding-top: 40%;
   }
-
 }
