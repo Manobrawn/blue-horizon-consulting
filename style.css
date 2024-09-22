@@ -10,7 +10,6 @@
   font-family: "roboto-italic";
   src: url(./Roboto/Roboto-Italic.ttf);
 }
-
 :root {
   --dark-color: #1f2937;
   --darker-white: #e5e7eb;
@@ -21,12 +20,12 @@
   --font-large: 36px;
   --font-xl: 48px;
 }
-/*----------- STANDARDS => Try not change, better overwrite with specifics -----------*/
+/*----------- STANDARDS => Don't Change just Overwrite with specifics -----------*/
 * {
   margin: 0;
 }
 h1 {
-  padding: 5rem 0 0 6rem; 
+  padding: 5rem 0 0 6rem; /* This padding preventes the h1 to hide under the <nav> bar! */ 
   font-family: "roboto-bold";
   font-size: var(--font-xl);
 }
@@ -47,8 +46,8 @@ p {
 }
 figcaption {
   font-family: "roboto-normal";
-  font-size: 14px;
-  color: var(--white-color);
+  font-size: 16px;
+  color: var(--dark-color);
 }
 footer {
   text-align: center;
@@ -56,7 +55,7 @@ footer {
   padding: 20px;
   color: var(--white-color);
 }
-button { 
+  button { 
   background-color: var(--blue-color);
   color: var(--white-color);
   font-family: "roboto-normal";
@@ -80,6 +79,7 @@ blockquote {
 }
 .standard-img {
   width: 100%;
+  border: 2px solid var(--dark-color);
 }
 .smaller-img {
   width: 300px;
@@ -93,7 +93,7 @@ nav {
   display: flex;
   justify-content: space-between;
   position: fixed;
-  background-color: var(--blue-color);
+  background-color: var(--dark-color);
 }
 .nav-left-container {
   display: flex;
@@ -104,8 +104,17 @@ nav {
   width: 70px;
   height: 70px;
   margin-right: 1rem;
+  display: inline-block;
 }
-.nav-logo-name h2 {
+
+.logo-header {
+  color: var(--white-color);
+  margin-bottom: 1rem;
+  float: right;
+  padding-top: 2rem;
+}
+
+.nav-logo-name {
   font-family: "roboto-normal";
   font-size: var(--font-medium);
   color: var(--white-color);
@@ -122,7 +131,7 @@ nav {
   font-size: var(--font-medium);
   color: var(--white-color);
 }
-/*----------------------------- SPECIFICS => about.html ------------------------------------------*/
+  /*----------------------------- SPECIFICS => about.html ------------------------------------------*/
 .main-header-about-us { 
   padding: 0;
   padding-bottom: 2rem;
@@ -130,7 +139,7 @@ nav {
 } 
 .subheader-about-us {
   color: var(--darker-white);
-  padding-top: 3rem;
+  padding-top: 0;
 }
 .top-container {
   display: flex;
@@ -183,7 +192,7 @@ section > hr {
   background-color: black;
   border: none;
 }
-/*--------------------------------- SPECIFICS => index.html -------------------------------------------*/
+  /*--------------------------------- SPECIFICS => index.html -------------------------------------------*/
 .main-header-homepage { 
   padding: 0;
   padding-bottom: 2rem;
@@ -194,27 +203,28 @@ section > hr {
   padding-top: 2rem;
 }
 .info-section {
-  padding-top: 30px;
+  padding-top: 50px;
   text-align: center;
 }
 .info-container {
   padding-top: 50px;
   padding-bottom: 50px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   gap: 1rem;
   margin: 0 auto;
+  max-width: 60%;
 }
 .info-item {
   text-align: center;
   flex: 1;
 }
 .info-box {
-  width: 40%;
+  width: 90%;
   height: 90%;
   border: 2px solid #0066ff;
   border-radius: 10px;
-  margin: 0 auto 5px;
+  margin: 0 auto 7px;
 }
 .info-box img {
   width: 100%;
@@ -236,7 +246,7 @@ section > hr {
   color: var(--dark-color);
 }
 .call-to-action {
-  background-color: var(--dark-color);
+  background-color: var(--blue-color);
   margin: 0 auto 6rem auto;
   border-radius: 10px;
   max-width: 70%;
@@ -258,7 +268,20 @@ section > hr {
   flex: 1;
   margin-right: 20px;
 }
-/*------------------------------------ SPECIFICS => services.html ----------------------------------------*/
+
+.cta-box button { 
+  background-color: var(--blue-color);
+  color: var(--white-color);
+  font-family: "roboto-normal";
+  border: none;  
+  border-radius: 10%;
+  width: 100px;
+  height: 40px;
+  cursor: pointer;
+  border-style: solid;
+} 
+
+/*-------------- SPECIFICS => services.html ----------------------------------------------*/
 .subheader-services {
   color: var(--darker-white);
 }
@@ -277,7 +300,7 @@ section > hr {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 .reverse-layout {
   flex-direction: row-reverse;
@@ -292,14 +315,14 @@ section > hr {
   background-color: var(--dark-color);
   color: var(--white-color);
 }
-/*---------------------------------------- signup.html --------------------------------------------------*/
+  /*---------------------------------------- signup.html --------------------------------------------------*/
 .form-header {
   text-align: center;
-  background-color: var(--dark-color);
-  color: var(--white-color);
-  margin-top: 1rem;
-  padding: 1rem 0;
+  padding-top: 7rem;
+  color: var(--dark-color);
+  margin-bottom: 2rem;
 }
+
 .invest-exp-headings {
   font-family: "roboto-bold";
   font-size: var(--font-small);
@@ -311,6 +334,8 @@ section > hr {
   margin: auto auto;
   width: 80%;
   background-color: var(--darker-white);
+  border-style: solid;
+  margin-bottom: 4rem;
 }
 .form-main-container {
   display: flex;
@@ -390,7 +415,7 @@ fieldset {
 
 @media only screen and (max-width: 1500px) {
   .nav-logo-name h2 {
-    font-size: var(--font-small);
+      font-size: var(--font-small);
   }
   .nav-right-container a {
     font-size: var(--font-small);
@@ -400,8 +425,8 @@ fieldset {
     padding-top: 10%;
   }
   .top-left-container, .top-right-container {
-    width: 40%;
-    padding-bottom: 2rem;
+      width: 40%;
+      padding-bottom: 2rem;
   }
   .info-section {
     padding: 20px;
@@ -410,13 +435,13 @@ fieldset {
     font-size: 35px;
   }
   p {
-    font-size: var(--font-small);
+      font-size: var(--font-small);
   }
   .info-box {
     width: 100%;
   }
   .form-right-container {
-    margin-left: 1rem;
+      margin-left: 1rem;
   }
   h2 {
     font-size: var(--font-medium);
@@ -441,7 +466,7 @@ fieldset {
     align-items: center;
     width: 100%;
     box-sizing: border-box;
-    padding: 1rem;
+      padding: 1rem;
   }
   .services-top-left-container,
   .services-top-right-container {
@@ -453,11 +478,11 @@ fieldset {
     font-size: 30px;
   }
   .reverse-layout button {
-    display: none;  
+    display: none;
   }
   .info-container {
     flex-direction: column;
-    padding-top: 1rem;
+    align-items: center;
   }
   .info-item {
     width: 100%;
@@ -473,7 +498,7 @@ fieldset {
   }
   .info-box {
     width: 70%;
-  }
+    }
   h1 {
     font-size: 30px;
   }
@@ -497,9 +522,6 @@ fieldset {
   }
   .nav .logo {
     justify-items: left;
-  }
-  .nav-logo-name {
-    display: none;
   }
   .nav-right-container a {
     font-size: var(--font-small);
@@ -546,9 +568,10 @@ fieldset {
     flex-direction: column;
   }
 }
-
+  
 @media only screen and (max-width: 430px) {
   .top-container {
     padding-top: 40%;
   }
 }
+  
