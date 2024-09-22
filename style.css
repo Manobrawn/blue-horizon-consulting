@@ -447,7 +447,7 @@ fieldset {
     font-size: var(--font-medium);
     line-height: 3rem;
   }
-  .about-img-container img {    /*Unexpected Behaviour*/
+  .about-img-container img {    
     padding-top: 1rem;
   }
 }
@@ -567,11 +567,13 @@ fieldset {
     display: flex;
     flex-direction: column;
   }
+  .logo-header {
+    display: none !important;
 }
   
 @media only screen and (max-width: 430px) {
   .top-container {
     padding-top: 40%;
   }
+  }
 }
-  
