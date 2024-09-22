@@ -567,7 +567,7 @@ fieldset {
     display: flex;
     flex-direction: column;
   }
-  .logo-header {
+  nav figure .logo-header {
     display: none;
 }
 
