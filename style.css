@@ -448,7 +448,7 @@ fieldset {
     font-size: var(--font-medium);
     line-height: 3rem;
   }
-  .about-img-container img {    /*Unexpected Behaviour*/
+  .about-img-container img {    
     padding-top: 1rem;
   }
 }
@@ -523,9 +523,6 @@ fieldset {
   }
   .nav .logo {
     justify-items: left;
-  }
-  .nav-logo-name {
-    display: none;
   }
   .nav-right-container a {
     font-size: var(--font-small);
